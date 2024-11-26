@@ -4,6 +4,8 @@
  */
 package com.rk.samples;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author rajes
@@ -11,39 +13,56 @@ package com.rk.samples;
 public class Employee {
 
     private int id;
-    private String name;
+    private String companyName;
     private int age;
-    private double saiary;
+    private double salary;
+
+    @Override
+    public String toString() {
+        return "Employee{"
+                + "id=" + id
+                + ", companyName='" + companyName + '\''
+                + ", age=" + age
+                + ", salary=" + new DecimalFormat("#.00").format(salary)
+                + '}';
+    }
+
+    public Employee(int id, String name, int age, double saiary) {
+        this.id = id;
+        this.companyName = name;
+        this.age = age;
+        this.salary = saiary;
+    }
 
     public int getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getCompanyName() {
+        return companyName;
     }
 
     public int getAge() {
         return age;
     }
 
-    public double getSaiary() {
-        return saiary;
+    public double getSalary() {
+        return salary;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
     public void setAge(int age) {
         this.age = age;
     }
 
-    public void setSaiary(double saiary) {
-        this.saiary = saiary;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 }
