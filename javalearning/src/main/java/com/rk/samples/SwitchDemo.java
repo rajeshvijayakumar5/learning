@@ -34,6 +34,18 @@ public class SwitchDemo {
         });
     }
 
+    public static String newIntegerSwitch(Integer message) {
+
+        return (switch (message) {
+            //case Integer i -> "Got " + i;                                     Error : this case label is dominated by a preceding case label
+            case 3, 4 ->
+                "got 3 and 4";
+            case Integer i ->
+                "Got " + i;
+            // default -> "default statement";                                  Error : switch has both an unconditional pattern and a default label
+        });
+    }
+
     public static String demoInstanceOf(Object message) {
 
         if (message instanceof Integer i) {
