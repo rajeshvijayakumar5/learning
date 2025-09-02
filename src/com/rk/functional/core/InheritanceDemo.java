@@ -1,4 +1,4 @@
-package com.rk.samples;
+package com.rk.functional.core;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
