@@ -1,4 +1,4 @@
-package com.rk.functional.lambda;
+package com.rk.lambda;
 
 /**
  * Demonstrates different ways of implementing a Single Abstract Method (SAM) interface

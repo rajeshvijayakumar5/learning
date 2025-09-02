@@ -1,4 +1,4 @@
-package com.rk.functional.lambda;
+package com.rk.lambda;
 
 class Greeter {
     void shortGreeting(String personName){

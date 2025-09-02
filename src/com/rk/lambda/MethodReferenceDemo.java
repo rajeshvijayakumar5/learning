@@ -1,4 +1,4 @@
-package com.rk.functional.lambda;
+package com.rk.lambda;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;

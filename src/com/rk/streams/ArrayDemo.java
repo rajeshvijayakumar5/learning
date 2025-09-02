@@ -1,4 +1,4 @@
-package com.rk.functional.streams;
+package com.rk.streams;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
