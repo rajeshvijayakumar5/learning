@@ -1,4 +1,4 @@
-package com.rk.functional.lambda;
+package com.rk.functional.streams;
 
 import java.util.ArrayList;
 import java.util.Arrays;
